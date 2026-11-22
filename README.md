@@ -123,13 +123,6 @@ Load `pgscope.sys` first, then optionally load `VerifyPg.sys` to actively poke a
 - No bugcheck (`CRITICAL_STRUCTURE_CORRUPTION`, `0x109`) after sustained write.
 - Debug output prefix `[Pgscope]` in DbgView / WinDbg.
 
-## Scope
-
-- Disposable VM only.
-- Test-signing cert only, no production signature.
-- Build-locked offset table. Check "Update to your winver" above before loading on anything other than the shipped build.
-- No HVCI / VBS bypass. If HVCI is on, several of these primitives won't work as-is.
-
 ## License
 
-Research use only.
+MIT. See [LICENSE](LICENSE).
